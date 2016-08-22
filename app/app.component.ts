@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {TranslateService} from 'ng2-translate/ng2-translate';
 
-var themeName = 'default';
+var themeName = 'theme2';
 @Component({
   selector: 'my-app',
   templateUrl: '../themes/' + themeName +'/theme.tpl.html',
@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
     ngOnInit(){
     	this.langList = [
     		{lang:'en', 'flag':'en.gif' },
-    		{lang:'de', 'flag':'de.gif' }
+    		{lang:'de', 'flag':'de.gif' },
 			{lang:'te', 'flag':'te.gif' }
     	];
     }
