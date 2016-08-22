@@ -10,10 +10,15 @@ import { ContactComponent }      from './components/contact/contact.component';
 
 import {routing} from './app.routing';
 
+import {HttpModule} from '@angular/http';
+import {TranslateModule} from 'ng2-translate/ng2-translate';
+
 @NgModule({
   imports:      [ 
   	BrowserModule,
   	routing, 
+	HttpModule,
+    TranslateModule.forRoot()
   ],
   declarations: [ AppComponent, HomeComponent, AboutComponent, ProfileComponent, ContactComponent ],
   bootstrap:    [ AppComponent ]
